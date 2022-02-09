@@ -1,0 +1,15 @@
+#include <stdio.h>
+recur_down (int n)
+ {
+    printf ("%d ", n);
+    if (n > 1)
+        recur_down (n - 1);
+}
+int main ()
+ {
+    int n;
+    printf("Enter n value: ");
+    scanf("%d",&n);
+    recur_down (n);
+    return 0;
+}
