@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int i,j = 0,k = 0,n, NUM[100], ODD[100], EVEN[100];
+    printf("Enter no of elements: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf(" ");
+        scanf("%d",&NUM[i]);
+    }
+    for(i = 0; i<5 ; i++)
+    {
+        if(NUM[i]%2 == 0)
+        {
+            EVEN[j] = NUM[i];
+            j++;
+        }
+        else
+        {
+            ODD[k] = NUM[i];
+            k++;
+        }
+    }
+    for(i = 0;i<j; i++)
+    {
+        printf("%d ",EVEN[i]);
+    }
+    printf(" ");
+    for(i = 0;i<k; i++)
+    {
+        printf("%d ",ODD[i]);
+    }
+    return 0;
+}
